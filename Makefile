@@ -1,4 +1,4 @@
-title  = "Cracking passwords with deep learning"
+title  = "bots-reading-bots"
 author = "Travis Hoppe"
 
 target      = "HnT_pres.md"
