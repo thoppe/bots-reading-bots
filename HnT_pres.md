@@ -1,7 +1,7 @@
 # Bots reading Bots
 
 %!(images/man_code.mp4) <<height:480px;transparent>>
-[https://thoppe.github.io/bots-reading-bots/HnT_pres.html#/](https://thoppe.github.io/bots-reading-bots/HnT_pres.html#/)
+[https://github.com/thoppe/bots-reading-bots](https://github.com/thoppe/bots-reading-bots)
 ----------
 [travis.hoppe](http://thoppe.github.io/), [@metasemantic](https://twitter.com/metasemantic)
   
