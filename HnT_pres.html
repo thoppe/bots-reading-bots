@@ -43,6 +43,25 @@
 <p>
 <h1>Bots reading Bots</h1></p>
 <br>
+<figure>
+    <video autoplay loop height="250px">  
+    <source src="images/book.mp4" type="video/mp4"> 
+    </video>
+    
+    </figure>
+<figure>
+    <video autoplay loop height="250px">  
+    <source src="images/baby.mp4" type="video/mp4"> 
+    </video>
+    
+    </figure>
+<figure>
+    <video autoplay loop height="250px">  
+    <source src="images/book.mp4" type="video/mp4"> 
+    </video>
+    
+    </figure>
+<br>
 <p>
 <a href="https://github.com/thoppe/bots-reading-bots">https://github.com/thoppe/bots-reading-bots</a></p>
 <hr>
@@ -99,29 +118,28 @@
     <figcaption>Edgar Allen Poe bot</figcaption>
     </figure>
 <br>
-<br>
 <p>
-Specifically a 128 wide two-layer LSTM-RNN with 500K input samples</p>
+What happens when one bot reads the book of the other?</p>
 </section>
 </section><section class="vertical-stack">
 <section   class="vertical-slide">
 <p>
-<h2>Please add me <br> to your LinkedIn network...</h2></p>
-<figure>
-    <a href="images/linkedin.png">
-    <img class="transparent_image" src="images/linkedin.png" height="400px">
-    </a>
-    
-    </figure>
-<figure>
-    <video autoplay loop height="410px">  
-    <source src="images/cat_hack.mp4" type="video/mp4"> 
-    </video>
-    
-    </figure>
+<h2>Methodology</h2></p>
 <br>
 <p>
-<h3>In 2012 the entire LinkedIn database of emails/passwords were dumped</h3></p>
+Top 250 books cross-referenced from <a href="https://www.gutenberg.org/">project Gutenberg</a> and <a href="https://www.goodreads.com/">goodreads</a></p>
+<br>
+<p>
+Manually cleaned headers, footers, and forwards (unsexy data science)</p>
+<br>
+<p>
+Used <code>tensorflow</code> and <code>tflearn</code> to build a LSTM-RNN</p>
+<br>
+<p>
+128 wide two-layer network, length 15, max 500K input samples, 100K test</p>
+<br>
+<p>
+Bot2bot similarity calculated by the cross-entropy loss<br>normalized against the internal test loss.</p>
 </section>
 </section><section class="vertical-stack">
 <section   class="vertical-slide">

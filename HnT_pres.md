@@ -1,6 +1,9 @@
 # Bots reading Bots
 
-%!(images/man_code.mp4) <<height:480px;transparent>>
+!(images/book.mp4) <<height:250px;transparent>> 
+!(images/baby.mp4) <<height:250px;transparent>> 
+!(images/book.mp4) <<height:250px;transparent>> 
+
 [https://github.com/thoppe/bots-reading-bots](https://github.com/thoppe/bots-reading-bots)
 ----------
 [travis.hoppe](http://thoppe.github.io/), [@metasemantic](https://twitter.com/metasemantic)
@@ -31,15 +34,21 @@ Each bot is a book...
 !(images/wuthering_heights.mp4) <<height:300px;transparent>> Emily Brontë bot
 !(images/poe_head.mp4) <<height:300px;transparent>> Edgar Allen Poe bot
 
-
-Specifically a 128 wide two-layer LSTM-RNN with 500K input samples
+What happens when one bot reads the book of the other?
 
 ====
-## Please add me <br> to your LinkedIn network...
-!(images/linkedin.png) <<height:400px;transparent>>
-!(images/cat_hack.mp4) <<height:410px;>>
+## Methodology
 
-### In 2012 the entire LinkedIn database of emails/passwords were dumped
+Top 250 books cross-referenced from [project Gutenberg](https://www.gutenberg.org/) and [goodreads](https://www.goodreads.com/)
+
+Manually cleaned headers, footers, and forwards (unsexy data science)
+
+Used `tensorflow` and `tflearn` to build a LSTM-RNN
+
+128 wide two-layer network, length 15, max 500K input samples, 100K test
+
+Bot2bot similarity calculated by the cross-entropy loss
+normalized against the internal test loss. 
 
 ====
 
