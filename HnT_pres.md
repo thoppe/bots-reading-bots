@@ -25,10 +25,15 @@ Let's get more nuanced, what if the input data shapes their *personality*...
 ====
 
 ## My people
-Each bot is a book*...
+Each bot is a book...
+
+!(images/dorthy_glitch.mp4) <<height:300px;transparent>> Frank Baum bot
+!(images/wuthering_heights.mp4) <<height:300px;transparent>> Emily Brontë bot
+!(images/poe_head.mp4) <<height:300px;transparent>> Edgar Allen Poe bot
 
 
-&& *Specifically a 128 wide two-layer LSTM-RNN with 500K input samples
+Specifically a 128 wide two-layer LSTM-RNN with 500K input samples
+
 ====
 ## Please add me <br> to your LinkedIn network...
 !(images/linkedin.png) <<height:400px;transparent>>
