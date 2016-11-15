@@ -18,7 +18,7 @@ _classification, unsupervised learning, regression, ... _
 
 ====
 
-## Machine are people too!
+## Machines are people too!
 not really...
 but what happens if you start treating them as such?
 
@@ -34,6 +34,7 @@ Each bot is a book...
 !(images/wuthering_heights.mp4) <<height:300px;transparent>> Emily Brontë bot
 !(images/poe_head.mp4) <<height:300px;transparent>> Edgar Allen Poe bot
 
+  
 What happens when one bot reads the book of the other?
 
 ====
@@ -49,6 +50,45 @@ Used `tensorflow` and `tflearn` to build a LSTM-RNN
 
 Bot2bot similarity calculated by the cross-entropy loss
 normalized against the internal test loss. 
+
+====
+
+# Books like me
+
+Pride and Prejudice by Jane Austen 
+	 1.391 Pride and Prejudice by Jane Austen 
+	 1.581 Sense and Sensibility by Jane Austen 
+	 1.588 Emma by Jane Austen 
+	 1.704 Frankenstein; Or, The Modern Prometheus by Mary Wollstonecraft
+
+Second Treatise of Government by John Locke 
+	 1.432 Second Treatise of Government by John Locke
+	 1.693 Democracy in America -- Volume 1 by Alexis de Tocqueville 
+	 1.708 Leviathan by Thomas Hobbes 
+	 1.721 On Liberty by John Stuart Mill 
+	 1.728 Utopia by Saint Thomas More 
+	 1.729 The Republic by Plato 
+  
+====
+
+# More books like me
+
+Manifest der Kommunistischen Partei. Friedrich Engels and Karl Marx
+	 1.903 Manifest der Kommunistischen Partei.
+	 1.918 Democracy and Education: An Introduction to the Philosophy 
+	 1.920 Democracy in America -- Volume 1 by Alexis de Tocqueville
+	 1.987 On Liberty by John Stuart Mill 
+	 1.995 Walden, and On The Duty Of Civil Disobedience by Henry David
+  
+Anna Karenina by Leo Tolstoy 
+	 1.507 Anna Karenina by Leo Tolstoy 
+	 1.659 The Brothers Karamazov by Fyodor Dostoyevsky 
+	 1.675 Crime and Punishment by Fyodor Dostoyevsky 
+	 1.683 War and Peace by Leo Tolstoy
+
+====
+
+# Similarity map
 
 ====
 
