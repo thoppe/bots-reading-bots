@@ -128,19 +128,18 @@ What happens when one bot reads the book of the other?</p>
 <h2>Methodology</h2></p>
 <br>
 <p>
-Top 250 books cross-referenced from <a href="https://www.gutenberg.org/">project Gutenberg</a> and <a href="https://www.goodreads.com/">goodreads</a></p>
+<h3>Data collection</h3>Top 100 books from last month from <a href="https://www.gutenberg.org/">project Gutenberg</a><br>Manually cleaned headers, footers, and forwards (unsexy data science)</p>
 <br>
 <p>
-Manually cleaned headers, footers, and forwards (unsexy data science)</p>
+<h3>Model</h3>Used <code>tensorflow</code> and <code>tflearn</code> to build a LSTM-RNN<br>128 wide two-layer network, length 15, max 500K input samples, 100K test<br>bot2bot similarity calculated by as the average cross-entropy loss<br>of one model reading the others test set</p>
+</section>
+</section><section class="vertical-stack">
+<section   class="vertical-slide">
+<p>
+<h2>Bots get <strong>confused</strong> when they see new text.</h2></p>
 <br>
 <p>
-Used <code>tensorflow</code> and <code>tflearn</code> to build a LSTM-RNN</p>
-<br>
-<p>
-128 wide two-layer network, length 15, max 500K input samples, 100K test</p>
-<br>
-<p>
-Bot2bot similarity calculated by the cross-entropy loss<br>normalized against the internal test loss.</p>
+<h2>We use confusion to measure <strong>author similarity</strong>.</h2></p>
 </section>
 </section><section class="vertical-stack">
 <section   class="vertical-slide">
@@ -186,7 +185,38 @@ Anna Karenina by Leo Tolstoy</p>
 </section><section class="vertical-stack">
 <section   class="vertical-slide">
 <p>
-<h1>Similarity map</h1></p>
+<h3>Similarity map</h3></p>
+<figure>
+    <a href="images/author_sim.png">
+    <img class="" src="images/author_sim.png" height="750px">
+    </a>
+    
+    </figure>
+</section>
+</section><section class="vertical-stack">
+<section   class="vertical-slide">
+<p>
+<h3>Similarity map</h3></p>
+<figure>
+    <a href="images/author_sim_annotate.png">
+    <img class="" src="images/author_sim_annotate.png" height="750px">
+    </a>
+    
+    </figure>
+</section>
+</section><section class="vertical-stack">
+<section   class="vertical-slide">
+<p>
+<h1>Where to go from here?</h1></p>
+<br>
+<p>
+<h3>More data! Collect more books, sort from <a href="https://www.goodreads.com/">goodreads</a>.</h3></p>
+<br>
+<p>
+<h3>Correlate measure with same author / same time period.</h3></p>
+<br>
+<p>
+<h3>What is being measured? Style, syntax, word choice, ...?</h3></p>
 </section>
 </section><section class="vertical-stack">
 <section   class="vertical-slide">

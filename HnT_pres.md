@@ -40,16 +40,22 @@ What happens when one bot reads the book of the other?
 ====
 ## Methodology
 
-Top 250 books cross-referenced from [project Gutenberg](https://www.gutenberg.org/) and [goodreads](https://www.goodreads.com/)
-
+### Data collection
+Top 100 books from last month from [project Gutenberg](https://www.gutenberg.org/)
+%and [goodreads](https://www.goodreads.com/)
 Manually cleaned headers, footers, and forwards (unsexy data science)
 
+### Model
 Used `tensorflow` and `tflearn` to build a LSTM-RNN
-
 128 wide two-layer network, length 15, max 500K input samples, 100K test
+bot2bot similarity calculated by as the average cross-entropy loss
+of one model reading the others test set
 
-Bot2bot similarity calculated by the cross-entropy loss
-normalized against the internal test loss. 
+====
+
+## Bots get *confused* when they see new text.
+
+## We use confusion to measure *author similarity*.
 
 ====
 
@@ -86,9 +92,25 @@ Anna Karenina by Leo Tolstoy
 	 1.675 Crime and Punishment by Fyodor Dostoyevsky 
 	 1.683 War and Peace by Leo Tolstoy
 
+==== 
+
+### Similarity map
+!(images/author_sim.png) <<height:750px;>>
+
 ====
 
-# Similarity map
+### Similarity map
+!(images/author_sim_annotate.png) <<height:750px;>>
+
+====
+
+# Where to go from here?
+
+### More data! Collect more books, sort from [goodreads](https://www.goodreads.com/).
+
+### Correlate measure with same author / same time period.
+
+### What is being measured? Style, syntax, word choice, ...?
 
 ====
 
